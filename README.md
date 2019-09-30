@@ -11,8 +11,8 @@ These instructions will get you a copy of the project up and running on your env
 * Credentials to your CCP interface
 * Network access to CCP and the cluster worker nodes
 * A CCP cluster (version 2) that's up and running
-* The private key ECDSAKEY which you configured for node access
-* Contracts between the cronjob and CCP (http) / worker nodes (ssh)
+* The private ECDSA key which you configured for node access
+* If you're using ACI as your CNI: contracts between the cronjob and CCP (http) / worker nodes (ssh)
 
 ### Installing
 
