@@ -1,0 +1,25 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: ccp-autoscaler
+  namespace: ccp
+spec:
+  schedule: "*/1 * * * *"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: ccp-autoscaler
+            image: # your image
+            env:
+            - name: CCPIP
+              value: # CCP interface IP
+            - name: CCPUSER
+              value: # CCP admin user
+            - name: CCPPASS
+              value: # CCP admin password
+            - name: CLUSTERNAME
+              value: # cluster name
+          restartPolicy: OnFailure
