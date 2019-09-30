@@ -18,7 +18,7 @@ These instructions will get you a copy of the project up and running on your env
 
 A step by step walkthrough to get this up and running in your own environment:
 
-1. Insert your ECDSAKEY private key into the [private.key](src/private.key) file
+1. Insert your ECDSA private key into the [private.key](src/private.key) file
 2. Build your docker image using the [Dockerfile](Dockerfile)
 3. Push the Docker image to your repository
 4. Edit [cron.yaml](cron.yaml) variables to match your setup
