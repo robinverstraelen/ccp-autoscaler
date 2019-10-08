@@ -18,7 +18,7 @@ These instructions will get you a copy of the project up and running on your env
 
 A step by step walkthrough to get this up and running in your own environment:
 
-1. Clone this GIT repository
+1. Clone this GIT repository (git clone https://github.com/robinverstraelen/ccp-autoscaler.git)
 2. Change directory to ccp-autoscaler
 3. Insert your ECDSA private key into the [private.key](src/private.key) file (edit the file and paste in the key)
 4. Build your docker image using the [Dockerfile](Dockerfile) (docker build -t "imagename" .)
